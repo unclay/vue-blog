@@ -1,8 +1,16 @@
 import Vue from 'vue'
-import App from './App'
+import Router from 'vue-router'
 
-/* eslint-disable no-new */
-new Vue({
-  el: 'body',
-  components: { App }
+import App from './App'
+import Index from './Index'
+
+Vue.use(Router)
+
+const router = new Router()
+router.map({
+  '/': {
+    component: Index
+  }
 })
+router.start(App, '#app')
+
