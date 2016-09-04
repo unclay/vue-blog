@@ -1,36 +1,188 @@
 <template>
   <div>
     <a-header></a-header>
-    <div>
-      <p></p>
-      <p></p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p>我是中间内容</p>
-      <p></p>
-      <p></p>
+    <a-banner></a-banner>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="news-title">网络红人馆</h1>
+          <h2 class="news-subtitle">这里收集的都是一些网络红词对应的网红</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div v-for="item in list" class="col-xs-6 col-sm-4 col-md-4">
+          <div class="news-container">
+            <div class="news-item" :style="item.style">
+            <div class="news-mask"></div>
+              <div class="news-item-box">
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.content }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row notes">
+        <div class="col-sm-8 col-md-8">
+          <ul>
+            <li>
+              <h4 data-url="http://www.ruanyifeng.com/blog/2010/11/61_things_every_web_developer_should_know.html">网站开发人员应该知道的61件事</h4>
+              <p>有人在Stack Overflow上发问，动手开发网站之前，需要知道哪些事情？<br>不出意料地，他得到了一大堆回答。<br>通常情况下，你需要把所有人的发言从头到尾读一遍。但是，Stack Overflow有一个很贴心的设计，它允许在问题下方开设一个wiki区，让所有人共同编辑一个最佳答案。于是，就有了下面这篇文章，一共总结出六个方面共计61条"网站开发须知"。</p>
+            </li>
+
+            <li>
+              <h4 data-url="http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html">MVC，MVP 和 MVVM 的图示</h4>
+              <p>复杂的软件必须有清晰合理的架构，否则无法开发和维护。<br>MVC（Model-View-Controller）是最常见的软件架构之一，业界有着广泛应用。它本身很容易理解，但是要讲清楚，它与衍生的 MVP 和 MVVM 架构的区别就不容易了。</p>
+            </li>
+
+            <li>
+              <h4 data-url="http://www.ruanyifeng.com/blog/2016/01/website-obesity-crisis.html">网站的肥胖症危机</h4>
+              <p>最近，有一篇文章正在疯传。<br>它是上个月，Maciej Ceglowski在澳大利亚的一次演讲，名为《网站的肥胖症危机》（文本，视频），反思了互联网开发的现状。<br>该文非常值得一读，Hacker News排行榜高居榜首，得到了1000多人的推荐。</p>
+            </li>
+
+            <li>
+              <h4 data-url="http://www.ruanyifeng.com/blog/2009/10/5_ways_to_search_for_files_using_the_terminal.html">Linux的五个查找命令</h4>
+              <p>最近，我在学习Linux，下面是一些笔记。<br>使用电脑的时候，经常需要查找文件。<br>在Linux中，有很多方法可以做到这一点。国外网站LinuxHaxor总结了五条命令，你可以看看自己知道几条。大多数程序员，可能经常使用其中的2到3条，对这5条命令都很熟悉的人应该是不多的。</p>
+            </li>
+            
+          </ul>
+          
+        </div>
+        <div class="col-md-4 col-md-4">
+          <h5>分类</h5>
+          <ul>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">EMScript 2015</a></li>
+            <li><a href="#">Wechat</a></li>
+            <li><a href="#">Nodejs</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    
     <a-footer></a-footer>
   </div>
 </template>
 
 <script>
-  import AHeader from './components/a-header'
-  import AFooter from './components/a-footer'
+  import AHeader from './components/a-header/header'
+  import ABanner from './components/a-banner/banner'
+  import AFooter from './components/a-footer/footer'
   export default {
     components: {
       AHeader,
+      ABanner,
       AFooter
+    },
+    data: function () {
+      return {
+        list: [{
+          name: '王健林',
+          content: '先定一个小目标，比如先赚个一个亿',
+          style: {
+            'background-image': 'url(/static/img/wangjianlin.f7a8e58.jpg)'
+          }
+        },
+        {
+          name: '王健林',
+          content: '先定一个小目标，比如先赚个一个亿',
+          style: {
+            'background-image': 'url(/static/img/wangjianlin.f7a8e58.jpg)'
+          }
+        },
+        {
+          name: '王健林',
+          content: '先定一个小目标，比如先赚个一个亿',
+          style: {
+            'background-image': 'url(/static/img/wangjianlin.f7a8e58.jpg)'
+          }
+        },
+        {
+          name: '王健林',
+          content: '先定一个小目标，比如先赚个一个亿',
+          style: {
+            'background-image': 'url(/static/img/wangjianlin.f7a8e58.jpg)'
+          }
+        },
+        {
+          name: '王健林',
+          content: '先定一个小目标，比如先赚个一个亿',
+          style: {
+            'background-image': 'url(/static/img/wangjianlin.f7a8e58.jpg)'
+          }
+        },
+        {
+          name: '王健林',
+          content: '先定一个小目标，比如先赚个一个亿',
+          style: {
+            'background-image': 'url(/static/img/wangjianlin.f7a8e58.jpg)'
+          }
+        }]
+      }
     }
   }
 </script>
+
+<style lang="less">
+  .wangjinalin {
+    background-image: url(./assets/wangjianlin.jpg);
+  }
+  .news-title {
+    text-align: center;
+    color: #444;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 35px 0 15px;
+  }
+  .news-subtitle {
+    text-align: center;
+    color: #9c9c9c;
+    font-size: 1.2em;
+    margin: 0 0 35px 0;
+    font-weight: normal;
+  }
+  .news-container {
+    position: relative;
+    margin-bottom: 30px;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+    .news-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.3);
+      z-index: 1;
+    }
+    .news-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      .news-item-box {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+
+  .notes {
+  }
+</style>
