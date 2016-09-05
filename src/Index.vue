@@ -28,8 +28,17 @@
         <div class="col-sm-12 col-md-12">
           <ul>
             <li class="note-item">
-              <h4 class="title" data-url="http://www.ruanyifeng.com/blog/2010/11/61_things_every_web_developer_should_know.html">网站开发人员应该知道的61件事</h4>
-              <p class="content">有人在Stack Overflow上发问，动手开发网站之前，需要知道哪些事情？<br>不出意料地，他得到了一大堆回答。<br>通常情况下，你需要把所有人的发言从头到尾读一遍。但是，Stack Overflow有一个很贴心的设计，它允许在问题下方开设一个wiki区，让所有人共同编辑一个最佳答案。于是，就有了下面这篇文章，一共总结出六个方面共计61条"网站开发须知"。</p>
+              <a href="http://www.unclay.com/note/fe-analysis-data">
+                <h4 class="title" data-url="">前端调优-数据之美</h4>
+                <p class="content">前端如何网页调优呢，其实我也是不知道的。。。。。<br>刚看了篇文章，前端数据之美 -- 基础篇，里面提到了如何收集性能和网页异常消息，<br>我们可以通过分析前端数据来提高前端页面性能及其健壮性</p>
+              </a>
+            </li>
+
+            <li class="note-item">
+              <a href="http://www.ruanyifeng.com/blog/2010/11/61_things_every_web_developer_should_know.html">
+                <h4 class="title" data-url="http://www.ruanyifeng.com/blog/2010/11/61_things_every_web_developer_should_know.html">网站开发人员应该知道的61件事</h4>
+                <p class="content">有人在Stack Overflow上发问，动手开发网站之前，需要知道哪些事情？<br>不出意料地，他得到了一大堆回答。<br>通常情况下，你需要把所有人的发言从头到尾读一遍。但是，Stack Overflow有一个很贴心的设计，它允许在问题下方开设一个wiki区，让所有人共同编辑一个最佳答案。于是，就有了下面这篇文章，一共总结出六个方面共计61条"网站开发须知"。</p>
+              </a>
             </li>
 
             <li class="note-item">

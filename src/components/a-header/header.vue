@@ -6,16 +6,16 @@
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#">home</a>
+          <a href="http://www.unclay.com">home</a>
         </li>
         <li>
-          <a href="#">blog</a>
+          <a href="http://www.unclay.com/note">blog</a>
         </li>
         <li>
           <a href="#">about</a>
         </li>
         <li>
-          <a href="#">github</a>
+          <a href="https://github.com/unclay">github</a>
         </li>
       </ul>
     </nav>
