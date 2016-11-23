@@ -24,7 +24,7 @@
 </template>
 
 <style lang="less">
-@navbar-transparent-bg: transparent;
+@navbar-transparent-bg: red;
 @navbar-transparent-border: transparent;
 @navbar-transparent-brand-color: #fff;
 @navbar-transparent-brand-hover-color: #fff;

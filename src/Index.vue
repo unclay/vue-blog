@@ -17,7 +17,7 @@
             <div class="news-mask"></div>
               <div class="news-item-box">
                 <h3>{{ item.name }}</h3>
-                <p>{{{ item.content }}}</p>
+                <p>{{ item.content }}</p>
               </div>
             </div>
           </div>

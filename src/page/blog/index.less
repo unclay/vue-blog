@@ -1,0 +1,73 @@
+body {
+  background-color: #f8f8f8;
+}
+.note-box {
+  padding: 20px 0;
+}
+.note-container {
+  margin-right: 10px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+}
+.note-asider {
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+}
+
+/* 顶部介绍 */
+@noteHeader: note-header;
+.@{noteHeader} {
+  padding: 20px;
+}
+.@{noteHeader}--item {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 16px;
+  color: #666;
+
+  .highlight {
+    color: #ff7798;
+  }
+}
+
+/* 分类 */
+@noteTag: note-tag;
+.@{noteTag} {
+  padding: 20px;
+  background-color: #f8f8f8;
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  };
+}
+.@{noteTag}--item {
+  float: left;
+  margin:10px 0;
+  width: 20%;
+  line-height: 26px;
+  font-size: 15px;
+  color: #666;
+}
+
+.icon-tag {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.icon--javascript {
+  background: url(http://image.seedit.com/sys/2016/07/13/d907a4cc2e26f641442feddfc53ece1b146403.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.icon--nodejs {
+  background: url(http://image.seedit.com/sys/2016/07/13/91452e688abfbf30d91b32753f9400bb333857.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.icon--service {
+  background: url(http://image.seedit.com/sys/2016/07/13/5c93b576c81c51fc01293a491ab42ab2759944.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+
